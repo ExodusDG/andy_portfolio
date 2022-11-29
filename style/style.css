@@ -177,7 +177,9 @@ body {
 .clientsMore {
     opacity: 0.5;
 }
-
+.armeMob {
+    display: none;
+} 
 .slideClients p {
     font-family: 'Playfair Display';
     margin-bottom: 0;
@@ -685,66 +687,359 @@ body {
     .slideContent {
         margin-top: 20px;
     }
+
     .slideClients {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
     }
+
     .slideContent {
         flex-wrap: wrap;
     }
+
     .aboutSkillsTitle {
         font-weight: 700;
     }
+
     .slideReview img {
         width: 40%;
         margin-top: 40px;
     }
+
     .slideReview {
         display: flex;
         justify-content: center;
     }
+
     .pageTitle {
         font-size: 22px;
     }
+
     .sliderMosaic img {
         width: 33%;
         height: 33vh;
         object-fit: cover;
     }
+
     .slideBlocks {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .slideBlocks img {
         height: 170px;
     }
+
     .sliderVinarte {
         position: relative;
         bottom: 0px;
     }
+
     .sliderVinarte img {
         position: absolute;
         bottom: 10%;
         top: unset;
     }
+
     .sliderVinarte {
         position: relative;
         bottom: 0px;
         height: 100vh;
     }
+
     .slideReisImages {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .slideReisImages {
         margin-top: 20px;
     }
+
     .slideReisImages {
         height: 80vh;
     }
-    .slideReisList > div {
+
+    .slideReisList>div {
         grid-template-columns: repeat(2, 1fr);
     }
-    .slideReisList > div:last-child {
+
+    .slideReisList>div:last-child {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.sliderTitleMobile {
+    display: none;
+}
+.maisonFullMB {
+    display: none;
+}
+
+@media (max-width: 491px) {
+    .menu ul {
+        display: none;
+    }
+
+    .andyMain {
+        display: block;
+        width: 100%;
+        height: 400px !important;
+        object-fit: cover !important;
+    }
+
+    .swiper {
+        overflow: scroll !important;
+    }
+
+    .menuWrapper {
+        position: relative;
+    }
+
+    .swiper-slide {
+        max-height: auto !important;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .slideContent h1 {
+        font-size: 28px;
+    }
+
+    .slideContent p {
+        font-size: 16px;
+    }
+
+    .pageTitle {
+        font-size: 25px;
+    }
+
+    .slideContent p {
+        line-height: 30px;
+    }
+
+    .swiper-slide {
+        overflow: scroll !important;
+        max-height: unset !important;
+    }
+
+    .aboutSkillsTable {
+        display: block;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .aboutSkillsTitle {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .slideContent p {
+        font-size: 20px;
+    }
+
+    .aboutSkillsTable>div>p:not(.aboutSkillsTitle) {
+        font-family: 'Playfair Display';
+        font-size: 20px;
+    }
+
+    .swiper-slide {
+        margin-top: 50px;
+    }
+
+    .slideDefault>img {
+        display: block;
+        width: 100%;
+        height: 400px !important;
+        object-fit: cover !important;
+    }
+
+    .slideClients {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .slideReview img {
+        width: 100%;
+    }
+
+    .slideReview {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sliderTitleMobile {
+        display: block;
+        font-size: 25px;
+        font-family: 'Playfair Display';
+        text-align: center;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+    .slideContentFull>img {
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .slideFullScreen {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .sliderFullImage {
+        transform: scale(1.5);
+    }
+
+    .armeLogo {
+        width: 80% !important;
+        margin-bottom: 50px;
+    }
+
+    .workJobsList {
+        margin-top: 20px;
+    }
+
+    .projectLink {
+        width: 100%;
+    }
+
+    .projectLink a {
+        font-size: 20px;
+    }
+
+    .armeLeft {
+        display: none !important;
+    }
+
+    .armeRight {
+        display: none !important;
+    }
+
+    .armeMob {
+        transform: scale(1.35);
+    }
+
+    .mobileFullImage {
+        height: auto;
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+    .maisonFullImg {
+        display: none !important;
+    }
+    .maisonFullMB {
+        width: 100%;
+    }
+    .slideDefault .maisonFullMB {
+        height: auto !important;
+        object-fit: cover !important;
+        height: 100% !important;
+    }
+    .slideMaison {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .maisonslide {
+        margin-top: 0;
+    }
+    .sliderMosaic img {
+        width: 50%;
+        height: 195px;
+    }
+    .slideMojo .slideDefault > img {
+        transform: scale(1.3);
+    }
+    .slideMojo .sliderContainer {
+        max-width: 100%;
+    }
+    .slideBlocks img {
+        height: 190px;
+    }
+    .slideWinarte .sliderContainer {
+        max-width: 100%;
+    }
+    .vinarteSlide .vinarteImageFull {
+        height: 570px !important;
+    }
+    .vinarteSlide .slideDefault {
+        margin-top: 0px;
+    }
+    .vinarteSlide {
+        margin-top: 10px;
+    }
+    .sliderVinarte img {
+        position: relative;
+        bottom: 0%;
+        top: unset;
+    }
+    .sliderVinarte {
+        height: auto;
+    }
+    .slideDSImage {
+        margin-top: 0 !important;
+    }
+    .slideDSImage .slideDefault {
+        margin-top: 0px;
+    }
+    .slideDSImage .sliderContainer {
+        max-width: 100%;
+    }
+    .slideDSImage .draftMobile {
+        height: auto !important;
+    }
+    .slideDSImage {
+        background: white;
+    }
+
+    .reisContainer .sliderContainer {
+        max-width: 100%;
+    }
+    .reisContainer img {
+        height: auto;
+    }
+    .slideReisImages {
+        height: auto;
+    }
+
+    .slideReisList > div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .reisMb {
+        display: none !important;
+    }
+    .sliderLemke {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+        top: 0;
+    }
+    .sliderLemkeMB .sliderContainer {
+        max-width: 100%;
+    }
+    .slideMojo {
+        margin-top: 0;
+    }
+    .andySlide {
+        padding-bottom: 50px !important;
+    }
+    .nav_About {
+        margin-top: 0;
+    }
+    .sliderContainer {
+        max-width: 340px;
+    }
+    .aboutSkillsTitle {
+        margin-top: 20px;
+    }
+    .swiper {
+        overflow: scroll;
+        height: auto;
+    }
+    .maisonFullMB {
+        display: block;
+    }
+    .armeMob {
+        display: block;
     }
 }
