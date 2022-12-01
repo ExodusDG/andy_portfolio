@@ -667,6 +667,7 @@ body {
 }
 
 @media (max-width: 491px) {
+
     .menu>a {
         width: 100%;
         text-align: center;
@@ -765,6 +766,9 @@ body {
 
     .slideReisList>div:last-child {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .slideContent > p {
+        font-size: 16px !important;
     }
 }
 
